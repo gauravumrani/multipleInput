@@ -18,7 +18,6 @@
 		var currentElem=this;
 		$(this).append('&nbsp;&nbsp;<button class="btn '+settings.plusBtnClass+' add"><span class="glyphicon glyphicon-plus-sign"></span></button>').find('.add_field_button');
 		$(currentElem).on("click",".add", function(e){
-			$('#text').html(count);
 			if(count<settings.maxInput){
 				count++;
 				$(currentElem).append('<div><br><input class="'+elemClass+'" id="'+elemId+'" type="'+elemType+'" name="'+elemName+'"/> &nbsp;<button class=" btn '+settings.minusBtnClass+' remove" ><span class="glyphicon glyphicon-minus-sign"></span></button></div>'); 
