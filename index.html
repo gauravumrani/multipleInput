@@ -8,7 +8,9 @@
 	<div>
 		<div class="container">
 			<div class="row">
-			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<a href="documentation.html">See Documentation</a>
+			</div>
 				<div class="col-sm-4">
 					<h1>Multiple Input Jquery Plugin</h1>
 					<div id="hobby">
@@ -27,7 +29,11 @@
 	<script src="multi-input.js"></script>
 	<script>
 		$(document).ready( function() {
-			$('#hobby').multiInput();
+			$('#hobby').multiInput({
+				plusBtnClass:'btn-success',
+				minusBtnClass:'btn-danger',
+				maxInput:3
+			});
 		});
 		function showAll(){
 			var allValues=[];
