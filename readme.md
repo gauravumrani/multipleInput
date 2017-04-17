@@ -1,4 +1,4 @@
-# umrani.github.io
+# Dynamic Multiple Input Box 
 
 This is a Jquery plugin to add multiple text fields to document. for example- you want to add hobbies of user.so user
 can add any number of hobbies with multiple input boxes
